@@ -149,8 +149,8 @@ public class DatabaseHelper extends SQLiteOpenHelper
         SQLiteDatabase db = getWritableDatabase();
 
         // returns a Cursor object containing the Result Set table produced by a Query
-        return db.rawQuery(String.format("SELECT %s, %s, %s FROM %s WHERE %s LIKE '%%%s%%'",
-                COL_1, COL_2, COL_3, TABLE_NAME, COL_3, userSearch), null);
+        return db.rawQuery(String.format("SELECT %s, %s, %s, %s, %s FROM %s WHERE %s LIKE '%%%s%%'",
+                COL_1, COL_3, COL_5, COL_2, COL_11, TABLE_NAME, COL_3, userSearch.trim()), null);
     }
 
     // --- UNDER SUPERVISION ---

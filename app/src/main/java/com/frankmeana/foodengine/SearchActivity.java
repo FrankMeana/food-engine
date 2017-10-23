@@ -84,12 +84,14 @@ public class SearchActivity extends AppCompatActivity
                     while (resultSet.moveToNext())
                     {
 
-                        // the last %n gives it a bit of extra space in the bottom of each item
-                        sb.append(String.format("%s%n%s%n%s%n",
-                                resultSet.getString(0), resultSet.getString(1), resultSet.getString(2)));
-
                         // Assign the current imageNames element the value of the product number
                         imageNames[counter] = resultSet.getString(0).toLowerCase(); // NEW
+
+                        // the last %n gives it a bit of extra space in the bottom of each item
+                        sb.append(String.format("%s%n%nCountry: %s%nBrand: %s%nStore: %s%n",
+                                resultSet.getString(1), resultSet.getString(2),
+                                resultSet.getString(3).equals("null")? "N/A": resultSet.getString(3),
+                                resultSet.getString(4).equals("null") ? "N/A": resultSet.getString(4)));
 
                         if (resultSet.getCount() != counter)
                             sb.append("!");

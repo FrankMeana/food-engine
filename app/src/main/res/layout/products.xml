@@ -24,6 +24,6 @@
         android:id="@+id/productTextView"
         android:layout_weight="1"
         android:layout_margin="5dp"
-        android:textSize="18sp"
+        android:textSize="14sp"
         android:textStyle="normal|bold"/>
 </LinearLayout>
