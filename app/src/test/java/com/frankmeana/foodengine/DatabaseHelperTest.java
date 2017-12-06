@@ -12,14 +12,14 @@ import static org.junit.Assert.*;
 public class DatabaseHelperTest {
     @Before
     public void setUp() throws Exception {
-
+        //Set up database connection here.
     }
 
     @After
     public void tearDown() throws Exception {
-
+        //Set connection null.
     }
-    
+
     @Test
     public void insertData() throws Exception {
 
