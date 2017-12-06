@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/FoodEngine.iml" filepath="$PROJECT_DIR$/FoodEngine.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/food-engine.iml" filepath="$PROJECT_DIR$/food-engine.iml" />
     </modules>
   </component>
 </project>
